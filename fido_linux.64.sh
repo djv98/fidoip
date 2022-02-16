@@ -263,11 +263,11 @@ echo ''
 sleep 10
 
 cd binkd
-sh binkd.Build.64
+#sh binkd.Build.64
 cd ../husky
-sh husky.Build.64
+#sh husky.Build.64
 cd ../golded
-sh golded.Build+.64
+#sh golded.Build+.64
 
 
 
