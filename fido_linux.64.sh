@@ -255,19 +255,20 @@ echo "-----------------------------------"
 
 echo ""
 
-echo ''
-echo '--------------------------------------------------------------'
-echo '| Starting compiling of fidoip (BinkD, Husky HPT and GoldEd+).|'
-echo '--------------------------------------------------------------'
-echo ''
-sleep 10
+#echo ''
+#echo '--------------------------------------------------------------'
+#echo '| Starting compiling of fidoip (BinkD, Husky HPT and GoldEd+).|'
+#echo '--------------------------------------------------------------'
+#echo ''
+#sleep 10
 
-cd binkd
+#cd binkd
 #sh binkd.Build.64
-cd ../husky
+#cd ../husky
 #sh husky.Build.64
-cd ../golded
+#cd ../golded
 #sh golded.Build+.64
+#cd ../
 
 
 
@@ -276,7 +277,6 @@ echo "  Creating fidoip's directories for user "$VAR_01" in /home/fido/  "
 echo '-----------------------------------------------------------------------------'
 echo ''
 
-cd ../
 
 if [ -e $CWD/binkd/binkd.log ]; then
   mkdir -p /home/fido
