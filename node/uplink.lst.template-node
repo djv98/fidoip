@@ -4,11 +4,12 @@ Link FIRSTLINK-NODE-NAME                                                 #### Do
 Aka FIRSTLINK-NODE-ADDRESS                                               #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
 ourAka MYNODE-ADDRESS                                                    #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
 Password FIRSTLINK-NODE-PASSWORD                                         #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-EchoMailFlavour Crash                                                    #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-FileEchoFlavour Crash                                                    #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-AutoAreaCreate on                                                        #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-AutoAreaCreateDefaults -$m 7000 -dupeCheck move -dupeHistory 11          #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-AutoFileCreate on                                                        #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-forwardRequests on                                                       #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-Packer zip                                                               #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
+EchoMailFlavour direct
+FileEchoFlavour direct
+AreaFixAutoCreate on
+AreaFixAutoCreateDefaults -$m 7000 -dupeCheck move -dupeHistory 11
+AreaFixAutoCreate on
+FileFixAutoCreate on
+forwardRequests on
+Packer zip
 
