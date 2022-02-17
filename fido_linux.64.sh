@@ -266,9 +266,9 @@ echo "-----------------------------------"
 #sh binkd.Build.64
 #cd ../husky
 #sh husky.Build.64
-#cd ../golded
-#sh golded.Build+.64
-#cd ../
+cd ../golded
+sh golded.Build+.64
+cd ../
 
 
 
