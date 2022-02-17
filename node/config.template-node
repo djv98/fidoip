@@ -140,7 +140,7 @@ EchoArea SHORTNODE-NAME.local /home/fido/msgbasedir/SHORTNODE-NAME.local -b Squi
 EchoArea SHORTNODE-NAME.fileecho /home/fido/msgbasedir/SHORTNODE-NAME.fileecho -b Squish -$m 7000 -dupeCheck move -dupeHistory 11 MYNODE-ADDRESS.333 MYNODE-ADDRESS.1 
 EchoArea su.ip.sysop /home/fido/msgbasedir/su.ip.sysop -b Squish -$m 7000 -dupeCheck move -dupeHistory 11 FIRSTLINK-NODE-ADDRESS MYNODE-ADDRESS.1 
 EchoArea r50.sysop /home/fido/msgbasedir/r50.sysop -b Squish -$m 7000 -dupeCheck move -dupeHistory 11 FIRSTLINK-NODE-ADDRESS MYNODE-ADDRESS.1 
-EchoArea r50.sysop.info /home/fido/msgbasedir/r50.sysop.info -b Squish -$m 7000 -dupeCheck move -dupeHistory 11 FIRSTLINK-NODE-ADDRESS YNODE-ADDRESS.1 
+EchoArea r50.sysop.info /home/fido/msgbasedir/r50.sysop.info -b Squish -$m 7000 -dupeCheck move -dupeHistory 11 FIRSTLINK-NODE-ADDRESS MYNODE-ADDRESS.1 
 EchoArea r50.sysop.talk /home/fido/msgbasedir/r50.sysop.talk -b Squish -$m 7000 -dupeCheck move -dupeHistory 11 FIRSTLINK-NODE-ADDRESS MYNODE-ADDRESS.1 
 EchoArea r50.bone /home/fido/msgbasedir/r50.bone -b Squish -$m 7000 -dupeCheck move -dupeHistory 11 FIRSTLINK-NODE-ADDRESS MYNODE-ADDRESS.1 
 EchoArea r50.hubs /home/fido/msgbasedir/r50.hubs -b Squish -$m 7000 -dupeCheck move -dupeHistory 11 FIRSTLINK-NODE-ADDRESS MYNODE-ADDRESS.1 
