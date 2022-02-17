@@ -419,7 +419,7 @@ cp -p /usr/local/etc/fidoip/node/config.template-node  /usr/local/etc/fido/confi
 cp -p /usr/local/etc/fidoip/node/uplink.lst.template-node  /usr/local/etc/fido/uplink.lst
 cp -p /usr/local/etc/fidoip/node/route-default.lst.template-node  /usr/local/etc/fido/route-default.lst
 mkdir -p /usr/local/etc/golded+
-cp -p /usr/local/etc/fidoip/node/decode.txt.template-node /usr/local/etc/golded+/golded.cfg
+cp -p /usr/local/etc/fidoip/node/golded.cfg.template-node /usr/local/etc/golded+/golded.cfg
 cp -p /usr/local/etc/fidoip/node/rs.template-node /usr/local/bin/rs
 cp -p /usr/local/etc/fidoip/node/rs.template-node /usr/local/bin/send
 cp -p /usr/local/etc/fidoip/node/recv.template-node /usr/local/bin/recv
