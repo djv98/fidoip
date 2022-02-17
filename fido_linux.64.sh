@@ -443,7 +443,7 @@ else
 echo 'Husky HPT compilation failed! Read fido.rus.utf file, install necessary packages for compilation and then run this script again.'
 fi
 
-if [ -e /usr/local/bin/gedlnx  ]; then
+if [ -e /usr/local/sbin/gedlnx  ]; then
 echo  '     GoldEd+ installed succesfully.'
 else
 echo 'GoldEd+ compilation failed! Read fido.rus.utf file, install necessary packages for compilation and then run this script again.'
