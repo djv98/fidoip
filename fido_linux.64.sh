@@ -454,7 +454,7 @@ if [ -e /usr/local/sbin/binkd  ]; then
 echo ""
 if [ -e /usr/local/sbin/hpt  ]; then
 echo ""
-if [ -e /usr/local/bin/gedlnx  ]; then
+if [ -e /usr/local/sbin/gedlnx  ]; then
 echo '------------------------------------------------------------------------'
 echo "   Done! Installation fidoip for user $VAR_01 are finished successfully."
 echo '   Edit config files as it decribed in fido.rus.koi file.      '
