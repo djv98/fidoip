@@ -461,7 +461,8 @@ cp /usr/local/etc/fidoip/golded.tpl.fghi.disable-template /usr/local/etc/golded+
 fi
 
 
-SHORTNODENAME=`echo $ftnaddress | sed 's|.*:||g' | sed 's|/|-|g'`
+#SHORTNODENAME=`echo $ftnaddress | sed 's|.*:||g' | sed 's|/|-|g'`
+SHORTNODENAME=`echo $stationname1 |tr a-z A-Z`
 ZONE=`echo $ftnaddress | sed 's|:.*||g' `
 
 SHORTNAMEUPLINK=`echo $uplinkftnaddress | sed 's|.*:||g' | sed 's|/|-|g'`
