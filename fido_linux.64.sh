@@ -374,12 +374,12 @@ fi
 
 sleep 1
 
-echo ""
-if [ -e /usr/local/sbin/hpucode  ]; then
-echo  'Found UUE message base scanning utility husky-hpucode.'
-else
-echo 'UUE message base scanning utility husky-hpucode is not installed!'
-fi
+#echo ""
+#if [ -e /usr/local/sbin/hpucode  ]; then
+#echo  'Found UUE message base scanning utility husky-hpucode.'
+#else
+#echo 'UUE message base scanning utility husky-hpucode is not installed!'
+#fi
 
 sleep 1
 
@@ -392,12 +392,12 @@ fi
 
 sleep 1
 
-echo ""
-if [ -e /usr/local/sbin/nldiff  ]; then
-echo  'Found Nodelist tools husky-nltools.'
-else
-echo 'Nodelist tools husky-nltools is not installed!'
-fi
+#echo ""
+#if [ -e /usr/local/sbin/nldiff  ]; then
+#echo  'Found Nodelist tools husky-nltools.'
+#else
+#echo 'Nodelist tools husky-nltools is not installed!'
+#fi
 
 sleep 1
 
@@ -410,12 +410,12 @@ fi
 
 sleep 1
 
-echo ""
-if [ -e /usr/local/sbin/bsopack  ]; then
-echo  'Found outbound netmail packer husky-bsopack.'
-else
-echo 'Outbound netmail packer husky-bsopack is not installed!'
-fi
+#echo ""
+#if [ -e /usr/local/sbin/bsopack  ]; then
+#echo  'Found outbound netmail packer husky-bsopack.'
+#else
+#echo 'Outbound netmail packer husky-bsopack is not installed!'
+#fi
 
 sleep 1
 
@@ -439,7 +439,7 @@ else
 echo 'Husky HPT compilation failed! Read fido.rus.utf file, install necessary packages for compilation and then run this script again.'
 fi
 
-if [ -e /usr/local/sbin/gedlnx  ]; then
+if [ -e /usr/local/bin/gedlnx  ]; then
 echo  '     GoldEd+ installed succesfully.'
 else
 echo 'GoldEd+ compilation failed! Read fido.rus.utf file, install necessary packages for compilation and then run this script again.'
@@ -450,7 +450,7 @@ if [ -e /usr/local/sbin/binkd  ]; then
 echo ""
 if [ -e /usr/local/sbin/hpt  ]; then
 echo ""
-if [ -e /usr/local/sbin/gedlnx  ]; then
+if [ -e /usr/local/bin/gedlnx  ]; then
 echo '------------------------------------------------------------------------'
 echo "   Done! Installation fidoip for user $VAR_01 are finished successfully."
 echo '   Edit config files as it decribed in fido.rus.koi file.      '
