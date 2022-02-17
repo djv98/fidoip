@@ -465,6 +465,7 @@ cp /usr/local/etc/fidoip/node/*.pl /usr/local/bin/
 
 #SHORTNODENAME=`echo $ftnaddress | sed 's|.*:||g' | sed 's|/|-|g'`
 SHORTNODENAME=`echo $stationname1 |tr A-Z a-z`
+SHORTNODENAMEUP=`echo $stationname1 |tr a-z A-Z`
 ZONE=`echo $ftnaddress | sed 's|:.*||g' `
 
 SHORTNAMEUPLINK=`echo $uplinkftnaddress | sed 's|.*:||g' | sed 's|/|-|g'`
@@ -547,15 +548,15 @@ sed -i "s|SYSTEM-NAME|"$stationname1"|g" /tmp/announce1.template-node
 
 sed -i "s|SYSTEM-NAME|"$stationname1"|g" /home/fido/rules2.txt
 sed -i "s|MYNODE-ADDRESS|$ftnaddress1|g" /home/fido/rules2.txt
-sed -i "s/SHORTNODE-NAME/"$SHORTNODENAME"/g" /home/fido/rules2.txt
+sed -i "s/SHORTNODE-NAME/"$SHORTNODENAMEUP"/g" /home/fido/rules2.txt
 sed -i "s/SYSTEM-OPERATOR-NAME/$fullname/g" /home/fido/rules2.txt
 sed -i "s|SYSTEM-NAME|"$stationname1"|g" /home/fido/rules1.txt
 sed -i "s|MYNODE-ADDRESS|$ftnaddress1|g" /home/fido/rules1.txt
-sed -i "s/SHORTNODE-NAME/"$SHORTNODENAME"/g" /home/fido/rules1.txt
+sed -i "s/SHORTNODE-NAME/"$SHORTNODENAMEUP"/g" /home/fido/rules1.txt
 sed -i "s/SYSTEM-OPERATOR-NAME/$fullname/g" /home/fido/rules1.txt
 sed -i "s|SYSTEM-NAME|"$stationname1"|g" /home/fido/rules.txt
 sed -i "s|MYNODE-ADDRESS|$ftnaddress1|g" /home/fido/rules.txt
-sed -i "s/SHORTNODE-NAME/"$SHORTNODENAME"/g" /home/fido/rules.txt
+sed -i "s/SHORTNODE-NAME/"$SHORTNODENAMEUP"/g" /home/fido/rules.txt
 sed -i "s/SYSTEM-OPERATOR-NAME/$fullname/g" /home/fido/rules.txt
 
 
@@ -567,9 +568,9 @@ export FIDOCONFIG=/usr/local/etc/fido/config
 /usr/local/sbin/txt2pkt -nf "Developer of fidoip"  -xf "$ftnaddress"  -xt "$ftnaddress" -nt "$fullname" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Welcome to new node, sysop!" -e ""$SHORTNODENAME".local" -d /home/fido/localinb /tmp/welcome2.template-node
 /usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$ftnaddress".333  -xt "$ftnaddress"  -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Uplink ""$uplinkftnaddress"" is created " -e ""$SHORTNODENAME".official" -d /home/fido/localinb /tmp/announce1.template-node
 /usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$ftnaddress".333  -xt "$ftnaddress"  -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "System point ""$ftnaddress"".1 is added for sysop" -e ""$SHORTNODENAME".official" -d /home/fido/localinb /tmp/announce.template-node
-/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$ftnaddress".333  -xt "$ftnaddress"  -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Rules of ""$SHORTNODENAME"".test" -e ""$SHORTNODENAME".test" -d /home/fido/localinb /home/fido/rules2.txt
-/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$ftnaddress".333  -xt "$ftnaddress"  -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Rules of ""$SHORTNODENAME"".forwards" -e ""$SHORTNODENAME".forwards" -d /home/fido/localinb /home/fido/rules1.txt
-/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$ftnaddress".333  -xt "$ftnaddress"  -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Rules of ""$SHORTNODENAME"".local" -e ""$SHORTNODENAME".local" -d /home/fido/localinb /home/fido/rules.txt
+/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$ftnaddress".333  -xt "$ftnaddress"  -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Rules of ""$SHORTNODENAMEUP"".test" -e ""$SHORTNODENAME".test" -d /home/fido/localinb /home/fido/rules2.txt
+/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$ftnaddress".333  -xt "$ftnaddress"  -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Rules of ""$SHORTNODENAMEUP"".forwards" -e ""$SHORTNODENAME".forwards" -d /home/fido/localinb /home/fido/rules1.txt
+/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$ftnaddress".333  -xt "$ftnaddress"  -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Rules of ""$SHORTNODENAMEUP"".local" -e ""$SHORTNODENAME".local" -d /home/fido/localinb /home/fido/rules.txt
 
 /usr/local/bin/toss 2> /dev/null
 
