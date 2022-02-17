@@ -414,9 +414,11 @@ rm -f  /usr/local/etc/golded+/golded.cfg
 mkdir -p /usr/local/etc/fidoip/node
 cp -R node/* /usr/local/etc/fidoip/node
 cp -p /usr/local/etc/fidoip/node/binkd.cfg.template-node /usr/local/etc/binkd.cfg
+mkdir -p /usr/local/etc/fido
 cp -p /usr/local/etc/fidoip/node/config.template-node  /usr/local/etc/fido/config
 cp -p /usr/local/etc/fidoip/node/uplink.lst.template-node  /usr/local/etc/fido/uplink.lst
 cp -p /usr/local/etc/fidoip/node/route-default.lst.template-node  /usr/local/etc/fido/route-default.lst
+mkdir -p /usr/local/etc/golded+
 cp -p /usr/local/etc/fidoip/node/decode.txt.template-node /usr/local/etc/golded+/golded.cfg
 cp -p /usr/local/etc/fidoip/node/rs.template-node /usr/local/bin/rs
 cp -p /usr/local/etc/fidoip/node/rs.template-node /usr/local/bin/send
@@ -462,7 +464,7 @@ cp /usr/local/etc/fidoip/node/*.pl /usr/local/bin/
 
 
 #SHORTNODENAME=`echo $ftnaddress | sed 's|.*:||g' | sed 's|/|-|g'`
-SHORTNODENAME=`echo $stationname1 |tr a-z A-Z`
+SHORTNODENAME=`echo $stationname1 |tr A-Z a-z`
 ZONE=`echo $ftnaddress | sed 's|:.*||g' `
 
 SHORTNAMEUPLINK=`echo $uplinkftnaddress | sed 's|.*:||g' | sed 's|/|-|g'`
