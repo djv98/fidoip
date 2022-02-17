@@ -57,14 +57,14 @@ mkdir -p /usr/local/etc/golded+
 mkdir -p /usr/local/etc/fidoip
 
 cd $TMP
+#wget http://math.ydns.eu/fidoip/$ZIPNAME
+
 rm -rf $TMP/golded+
 mkdir $TMP/golded+
 cd $TMP/golded+
 
-wget http://math.ydns.eu/fidoip/$ZIPNAME
 # Correct GoldEd+ zip file name if you are using fresh version. 
-tar -xzpf $ZIPNAME
-
+tar -xzpf ../$ZIPNAME
 
 #./dist-gpl.sh
 #./dist-gpl.sh
