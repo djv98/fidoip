@@ -21,7 +21,7 @@ VERSION=1.1.5-b		# Program version
 PVERSION=		# Package version (Useful for removing "-"s, CVS builds, etc.)
 ARCH=${ARCH:-x86_64}	# Package architecture
 BUILD=${BUILD:-fido_my1}	# Build number plus packager initials (use your own)
-ZIPNAME=gps90710.tb2
+ZIPNAME=golded-plus.tar.gz
 
 CWD=`pwd`
 TMP="/tmp"	# Location to compile the source
@@ -58,14 +58,16 @@ mkdir -p /usr/local/etc/fidoip
 
 cd $TMP
 rm -rf $TMP/golded+
-
-# Correct GoldEd+ zip file name if you are using fresh version. 
-tar -xjpf $CWD/$ZIPNAME
-
+mkdir $TMP/golded+
 cd $TMP/golded+
 
-./dist-gpl.sh
-./dist-gpl.sh
+wget http://math.ydns.eu/fidoip/$ZIPNAME
+# Correct GoldEd+ zip file name if you are using fresh version. 
+tar -xzpf $ZIPNAME
+
+
+#./dist-gpl.sh
+#./dist-gpl.sh
 
 
 # Create package docs:
@@ -174,6 +176,6 @@ rm -f /usr/local/sbin/*.txt
 
 # Clean up the extra stuff:
 
-if [ "$1" = "--cleanup" ]; then
-  rm -rf $PKG
-fi
+#if [ "$1" = "--cleanup" ]; then
+#  rm -rf $PKG
+#fi
