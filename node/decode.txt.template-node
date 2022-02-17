@@ -105,13 +105,13 @@ ConfirmResponse  Ask  ; Спросить пользователя
 PeekURLOptions FromTop
 URLHANDLER -NoPause -NoKeepCtrl -Wipe /usr/bin/firefox `echo "@url" | /usr/bin/iconv -f CP866 -t UTF-8` > /dev/null 2>&1 &
 DispHdrLocation Yes
-DispHdrFGHIUrl  SHORT
+#DispHdrFGHIUrl  SHORT
 MsgListHeader   1
-URLBrackets     Yes
+#URLBrackets     Yes
 AreaDef FGHIGET  "Полученное с fghi.pp.ru" 0 LOCAL  OPUS /home/fido/fghigetdir
-FGHIGetHandler wget http://fghi.pp.ru/get?@fghiurl -O @ofile -U "GoldED-NSF Downloader"
-FGHIReverseSearch YES
-MsgListFirstFGHI NO
+#FGHIGetHandler wget http://fghi.pp.ru/get?@fghiurl -O @ofile -U "GoldED-NSF Downloader"
+#FGHIReverseSearch YES
+#MsgListFirstFGHI NO
 
 KeybExt         Yes
 
