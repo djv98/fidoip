@@ -456,9 +456,9 @@ cp /usr/local/etc/fidoip/node/month* /usr/local/bin/
 cp /usr/local/etc/fidoip/node/clean_outb /usr/local/bin/
 cp /usr/local/etc/fidoip/node/*.pl /usr/local/bin/
 
-if [ "$OSNAME" = "$T2" ]; then
-cp /usr/local/etc/fidoip/golded.tpl.fghi.disable-template /usr/local/etc/golded+/golded.tpl
-fi
+#if [ "$OSNAME" = "$T2" ]; then
+#cp /usr/local/etc/fidoip/golded.tpl.fghi.disable-template /usr/local/etc/golded+/golded.tpl
+#fi
 
 
 #SHORTNODENAME=`echo $ftnaddress | sed 's|.*:||g' | sed 's|/|-|g'`
