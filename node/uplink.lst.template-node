@@ -1,9 +1,10 @@
 # Main uplink default configuration
 
-Link FIRSTLINK-NODE-NAME                                                 #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-Aka FIRSTLINK-NODE-ADDRESS                                               #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-ourAka MYNODE-ADDRESS                                                    #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
-Password FIRSTLINK-NODE-PASSWORD                                         #### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
+#### Do not edit this comment. This is FIRST-AND-MAIN-LINK (default UPLINK)
+Link FIRSTLINK-NODE-NAME
+Aka FIRSTLINK-NODE-ADDRESS
+ourAka MYNODE-ADDRESS
+Password FIRSTLINK-NODE-PASSWORD
 EchoMailFlavour direct
 FileEchoFlavour direct
 AreaFixAutoCreate on
