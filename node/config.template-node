@@ -102,8 +102,8 @@ NodeList nodelist
 NetmailArea Netmail /home/fido/netmail -b Squish
 BadArea bad /home/fido/badarea -b Squish
 DupeArea dupes /home/fido/dupearea -b Squish
-dupebasetype    HashDupes
-areasmaxdupeage	20
+#dupebasetype    HashDupes
+#areasmaxdupeage	20
 
 LocalArea carbonArea /home/fido/carbonarea -b Squish
 CarbonTo SYSTEM-OPERATOR-NAME
