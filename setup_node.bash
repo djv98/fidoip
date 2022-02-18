@@ -520,6 +520,7 @@ sed -i "s/FIRSTLINK-NODE-PASSWORD/"$uplinkpassword"/g" /usr/local/etc/binkd.cfg
 sed -i "s/FIRSTLINK-NODE-PASSWORD/"$uplinkpassword"/g" /usr/local/etc/fido/uplink.lst
 
 sed -i "s/SHORTNODE-NAME/"$SHORTNODENAME"/g" /usr/local/bin/fido.dayly
+sed -i "s/SHORTNODE-NAME/"$SHORTNODENAME"/g" /usr/local/bin/fido.monthly
 
 sed -i "s/SHORTNODE-NAME/"$SHORTNAMEUPLINK"/g" /usr/local/etc/golded+/macro.cfg
 sed -i "s/LINK-NODE-PASSWORD/"$uplinkpassword"/g" /usr/local/etc/golded+/macro.cfg

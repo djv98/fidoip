@@ -14,7 +14,7 @@ fi
 NODENUMBER=`cat /usr/local/etc/binkd.cfg | grep node | grep ".1 - " | sed "s| -.*||g" | sed "s|node ||g" | sed "s|\\..*||g" `
 NODENUMBER1=`echo $NODENUMBER | sed 's|/|\\\/|g'`
 #SHORTNODENAME=`echo $NODENUMBER | sed 's|.*:||g' | sed 's|/|-|g'`
-SHORTNODENAME=passer
+SHORTNODENAME=SHORTNODE-NAME
 NUMBERDAYS=`/usr/local/bin/monthlong`
 
 /usr/local/bin/binkdstat.pl -d$NUMBERDAYS > /home/fido/binkd-monthly.rpt
