@@ -57,7 +57,9 @@ mkdir -p /usr/local/etc/golded+
 mkdir -p /usr/local/etc/fidoip
 
 cd $TMP
-#wget http://math.ydns.eu/fidoip/$ZIPNAME
+if [ ! -e $ZIPNAME ]; then
+wget http://math.ydns.eu/fidoip/$ZIPNAME
+fi
 
 rm -rf $TMP/golded+
 mkdir $TMP/golded+
