@@ -22,7 +22,7 @@ fi
 NODENUMBER=`cat /usr/local/etc/binkd.cfg | grep node | grep ".1 - " | sed "s| -.*||g" | sed "s|node ||g" | sed "s|\\..*||g" `
 NODENUMBER1=`echo $NODENUMBER | sed 's|/|\\\/|g'`
 #SHORTNODENAME=`echo $NODENUMBER | sed 's|.*:||g' | sed 's|/|-|g'`
-SHORTNODENAME=passer
+SHORTNODENAME=SHORTNODE-NAME
 
 /usr/local/bin/binkdstat.pl -d1 >  /home/fido/binkd-dayly.rpt
 /usr/local/bin/hptlogstat.pl 1 -traffic > /home/fido/hpt-dayly.rpt
