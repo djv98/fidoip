@@ -1,2 +1,5 @@
 #!/bin/sh
-/usr/local/sbin/binkd -p -P LINK-NODE-ADDRESS /usr/local/etc/binkd.cfg ; sync    #### Do not edit this comment or scripts addlink and removelink will not work for  LINK-NODE-ADDRESS link 
+
+#### Do not edit this comment or scripts addlink and removelink will not work for  LINK-NODE-ADDRESS link 
+/usr/local/sbin/binkd -p -P LINK-NODE-ADDRESS /usr/local/etc/binkd.cfg ; sync
+
