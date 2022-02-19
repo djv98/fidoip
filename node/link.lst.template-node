@@ -1,15 +1,13 @@
-
-
-Link LINK-NODE-NAME                                              #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link 
-Aka LINK-NODE-ADDRESS                                            #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link 
-ourAka MYNODE-ADDRESS                                            #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link
-Password LINK-NODE-PASSWORD                                      #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link
-EchoMailFlavour Normal                                           #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link
-FileEchoFlavour Normal                                           #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link
-AutoAreaCreate on                                                #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link 
-AutoAreaCreateDefaults -$m 7000 -dupeCheck move -dupeHistory 11  #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link 
-AutoFileCreate on                                                #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link 
-forwardRequests on                                               #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link 
-Packer zip                                                       #### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link 
-
+#### LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD Do not edit this comment for link 
+Link LINK-NODE-NAME
+Aka LINK-NODE-ADDRESS
+ourAka MYNODE-ADDRESS
+Password LINK-NODE-PASSWORD
+EchoMailFlavour Normal
+FileEchoFlavour Normal
+AutoAreaCreate on
+AutoAreaCreateDefaults -$m 7000 -dupeCheck move -dupeHistory 11
+AutoFileCreate on
+forwardRequests on
+Packer zip
 
