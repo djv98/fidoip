@@ -1,2 +1,3 @@
+#### Link to Sysop LINK-NODE-NAME  Do not edit this comment or scripts addlink and removelink will not work for LINK-NODE-ADDRESS
+node LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD
 
-node LINK-NODE-ADDRESS LINK-HOST-DOMAIN-NAME LINK-NODE-PASSWORD     #### Link to Sysop LINK-NODE-NAME  Do not edit this comment or scripts addlink and removelink will not work for LINK-NODE-ADDRESS
