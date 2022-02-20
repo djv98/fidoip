@@ -6,7 +6,7 @@ Password LINK-NODE-PASSWORD
 EchoMailFlavour Normal
 FileEchoFlavour Normal
 AutoAreaCreate on
-AutoAreaCreateDefaults -$m 7000 -dupeCheck move -dupeHistory 11
+AutoAreaCreateDefaults -b Squish -$m 7000 -dupeCheck move -dupeHistory 11
 AutoFileCreate on
 forwardRequests on
 Packer zip
