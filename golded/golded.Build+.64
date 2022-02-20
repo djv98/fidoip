@@ -83,9 +83,9 @@ cp -a $PDOC /usr/local/doc/$PNAME-$VERSION/
 chmod 644 /usr/local/doc/$PNAME-$VERSION/*
 
 
-if [ -e $CWD/decode.txt ]; then
-  cat $CWD/decode.txt > /usr/local/etc/fidoip/decode.txt.template
-  cat $CWD/decode.txt > /usr/local/etc/golded+/golded.cfg
+if [ -e $CWD/golded.cfg ]; then
+  cat $CWD/golded.cfg > /usr/local/etc/fidoip/golded.cfg.template
+  cat $CWD/golded.cfg > /usr/local/etc/golded+/golded.cfg
 fi
 
 if [ -e $CWD/goldhelp.cfg ]; then
