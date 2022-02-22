@@ -303,6 +303,7 @@ if [ -e $CWD/binkd/binkd.log ]; then
   mkdir -p /home/fido/flags
   mkdir -p /home/fido/magic
   mkdir -p /home/fido/announce
+  mkdir -p /home/fido/logs
  if [ -e /home/fido/binkd.log ]; then
  echo ' '
  else
@@ -348,9 +349,9 @@ fi
 
 #Linking libraries
 
-ln -sf /usr/local/lib/libfidoconfig.so.1.4 /lib/libfidoconfig.so.1.4
-ln -sf /usr/local/lib/libsmapi.so.2.4 /lib/libsmapi.so.2.4
-ln -sf /usr/local/lib/libfidoconfig.so /lib/libfidoconfig.so.1.4
+#ln -sf /usr/local/lib/libfidoconfig.so.1.4 /lib/libfidoconfig.so.1.4
+#ln -sf /usr/local/lib/libsmapi.so.2.4 /lib/libsmapi.so.2.4
+#ln -sf /usr/local/lib/libfidoconfig.so /lib/libfidoconfig.so.1.4
 
 
 echo '------------------------------------------------------------------'
