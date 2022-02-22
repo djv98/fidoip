@@ -84,7 +84,7 @@ chmod 644 /usr/local/doc/$PNAME-$VERSION/*
 
 
 if [ -e $CWD/golded.cfg ]; then
-  cat $CWD/golded.cfg > /usr/local/etc/fidoip/golded.cfg.template
+  #cat $CWD/golded.cfg > /usr/local/etc/fidoip/golded.cfg.template
   cat $CWD/golded.cfg > /usr/local/etc/golded+/golded.cfg
 fi
 
