@@ -304,10 +304,10 @@ if [ -e $CWD/binkd/binkd.log ]; then
   mkdir -p /home/fido/magic
   mkdir -p /home/fido/announce
   mkdir -p /home/fido/logs
- if [ -e /home/fido/binkd.log ]; then
+ if [ -e /home/fido/logs/binkd.log ]; then
  echo ' '
  else
- cat $CWD/binkd/binkd.log > /home/fido/binkd.log
+ cat $CWD/binkd/binkd.log > /home/fido/logs/binkd.log
  fi
 fi
 
@@ -330,7 +330,7 @@ if [ -e $CWD/husky/sqpack.log ]; then
    cat $CWD/husky/sqpack.log > /home/fido/logs/sqpack.log
 fi
 
-if [ -e /home/fido/hpt.log ]; then
+if [ -e /home/fido/logs/hpt.log ]; then
 echo ' '
  else
  cat $CWD/husky/hpt.log > /home/fido/logs/hpt.log
