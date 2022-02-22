@@ -17,12 +17,12 @@ AutoFileCreate on
 Packer zip
 accessgrp F
 Route normal 2:5020/828.0 1:* 2:* 3:* 4:* 5:*
-inbound /home/fido/inbound
-ProtInbound /home/fido/protinb
-Localinbound /home/fido/localinb
+ProtInbound /home/fido/inbound
+inbound /home/fido/inbound/unsecure
+Localinbound /home/fido/inbound/local
+tempInbound /home/fido/inbound/temp
 Outbound /home/fido/outbound
-tempOutbound /home/fido/tempoutb
-tempInbound /home/fido/tempinb
+tempOutbound /home/fido/outbound/temp
 MsgBaseDir /home/fido/msgbasedir
 FileAreaBaseDir /home/fido/filebox
 PassFileAreaDir /home/fido/filebox

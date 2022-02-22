@@ -73,12 +73,12 @@ routefile immediate no-route MYNODE-ADDRESS.*
 # use uplinkset utility
 include	/usr/local/etc/fido/route-default.lst
 
-Inbound		/home/fido/inbound
-ProtInbound     /home/fido/protinb
-LocalInbound    /home/fido/localinb
+Inbound		/home/fido/inbound/unsecure
+ProtInbound     /home/fido/inbound
+LocalInbound    /home/fido/inbound/local
+tempInbound     /home/fido/inbound/temp
 Outbound	/home/fido/outbound
-tempOutbound    /home/fido/tempoutb
-tempInbound     /home/fido/tempinb
+tempOutbound    /home/fido/outbound/temp
 MsgBaseDir      /home/fido/msgbasedir
 FileAreaBaseDir /home/fido/filebox
 

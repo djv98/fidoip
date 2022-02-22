@@ -78,17 +78,17 @@ if [ -e /usr/local/sbin/gl ]; then
 	rm /usr/local/sbin/gl
 fi
 
-if [ -e /home/fido/protinbound ]; then
-        rm -r /home/fido/protinbound
+if [ -e /home/fido/inbound ]; then
+        rm -r /home/fido/inbound
 fi
-if [ -e /home/fido/tempinbound ]; then
-        rm -r /home/fido/tempinbound
+if [ -e /home/fido/inbound/temp ]; then
+        rm -r /home/fido/inbound/temp
 fi
-if [ -e /home/fido/tempoutbound ]; then
-        rm -r /home/fido/tempoutbound
+if [ -e /home/fido/inbound/local ]; then
+        rm -r /home/fido/inbound/local
 fi
-if [ -e /home/fido/localinbound ]; then
-        rm -r /home/fido/localinbound
+if [ -e /home/fido/outbound/temp ]; then
+        rm -r /home/fido/outbound/temp
 fi
 
 
@@ -284,17 +284,17 @@ echo ''
 
 if [ -e $CWD/binkd/binkd.log ]; then
   mkdir -p /home/fido
-  mkdir -p /home/fido/outbound
-  mkdir -p /home/fido/protinb
   mkdir -p /home/fido/inbound
-  mkdir -p /home/fido/tempinb
-  mkdir -p /home/fido/tempoutb
+  mkdir -p /home/fido/inbound/unsecure
+  mkdir -p /home/fido/inbound/temp
+  mkdir -p /home/fido/inbound/local
+  mkdir -p /home/fido/outbound
+  mkdir -p /home/fido/outbound/temp
   mkdir -p /home/fido/filebox
   mkdir -p /home/fido/badarea 
   mkdir -p /home/fido/carbonarea
   mkdir -p /home/fido/msgbasedir
   mkdir -p /home/fido/netmailarea
-  mkdir -p /home/fido/localinb
   mkdir -p /home/fido/uudecode
   mkdir -p /home/fido/outfile
   mkdir -p /home/fido/nodelist
