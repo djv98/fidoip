@@ -27,7 +27,7 @@ my $totals = 0;
 my $totalq = 0;
 
 #$logname = "c:\\fido\\logs\\htick.log";
-$logname = "/home/fido/htick.log";
+$logname = "/home/fido/logs/htick.log";
 
 # this hash is used, when converting verbose months to numeral (Jan = 0)
 @months{qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)} = (0..11);

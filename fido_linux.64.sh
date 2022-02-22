@@ -315,35 +315,35 @@ fi
 # Add logs for hpt:
 
 if [ -e $CWD/husky/echotoss.log ]; then
-  cat $CWD/husky/echotoss.log > /home/fido/echotoss.log
+  cat $CWD/husky/echotoss.log > /home/fido/logs/echotoss.log
 fi
 
 if [ -e $CWD/husky/import.log ]; then
-   cat $CWD/husky/import.log > /home/fido/import.log
+   cat $CWD/husky/import.log > /home/fido/logs/import.log
 fi
 
 if [ -e $CWD/husky/htick.log ]; then
-   cat $CWD/husky/htick.log > /home/fido/htick.log
+   cat $CWD/husky/htick.log > /home/fido/logs/htick.log
 fi
 
 if [ -e $CWD/husky/sqpack.log ]; then
-   cat $CWD/husky/sqpack.log > /home/fido/sqpack.log
+   cat $CWD/husky/sqpack.log > /home/fido/logs/sqpack.log
 fi
 
 if [ -e /home/fido/hpt.log ]; then
 echo ' '
  else
- cat $CWD/husky/hpt.log > /home/fido/hpt.log
+ cat $CWD/husky/hpt.log > /home/fido/logs/hpt.log
 fi
 
 
 # Add log for golded+:
 
-if [ -e /home/fido/golded.log ]; then
+if [ -e /home/fido/logs/golded.log ]; then
   echo ' ' 	
  else 
   if [ -e $CWD/golded/golded.log ]; then
-  cat $CWD/golded/golded.log > /home/fido/golded.log
+  cat $CWD/golded/golded.log > /home/fido/logs/golded.log
  fi
 fi
 

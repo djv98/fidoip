@@ -20,7 +20,7 @@ maxservers 250
 oblksize 32767
 send-if-pwd
 #backresolv
-log /home/fido/binkd.log
+log /home/fido/logs/binkd.log
 loglevel 4
 binlog /home/fido/binkd.sts
 conlog 4

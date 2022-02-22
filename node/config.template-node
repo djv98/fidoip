@@ -84,8 +84,8 @@ FileAreaBaseDir /home/fido/filebox
 
 public		/home/fido/public
 
-echotosslog     /home/fido/echotoss.log
-importlog       /home/fido/import.log
+echotosslog     /home/fido/logs/echotoss.log
+importlog       /home/fido/logs/import.log
 
 logFileDir      /home/fido/
 DupeHistoryDir	/home/fido/msgbasedir

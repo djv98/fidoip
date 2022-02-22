@@ -11,7 +11,7 @@
 
 use Time::Local;
 
-$logFileName="/home/fido/binkd.log";
+$logFileName="/home/fido/logs/binkd.log";
 $sec_in_day=86400;
 
 %months=qw(

@@ -121,7 +121,7 @@ fi
 # Add log for golded+:
 
   mkdir -p /home/fido
-  cat $CWD/golded.log > /home/fido/golded.log
+  cat $CWD/golded.log > /home/fido/logs/golded.log
  
 
 

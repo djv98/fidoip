@@ -21,8 +21,8 @@ ORIGIN "Неужели опять: яйца всмятку, котлеты, цыплята?"
 
 COLOR MENU   UNREAD     YELLOW  ON BLACK
 HighlightUnread Yes
-SEMAPHORE EXPORTLIST  /home/fido/echotoss.log
-SEMAPHORE IMPORTLIST  /home/fido/import.log
+SEMAPHORE EXPORTLIST  /home/fido/logs/echotoss.log
+SEMAPHORE IMPORTLIST  /home/fido/logs/import.log
 AreaFile FidoConfig  /usr/local/etc/fido/config
 LOADLANGUAGE         /usr/local/etc/golded+/goldlang.cfg
 AREASCAN *
@@ -75,7 +75,7 @@ RobotName T-fix
 RobotName FAQServer
 RobotName FileFix
 RobotName Dumb-robot
-LogFile /home/fido/golded.log
+LogFile /home/fido/logs/golded.log
 
 ; Макросы автоматически вбивающие пароль при наборе в поле адреса
 ; сокращения aСОКРАЩЕННОЕ-НАЗВАНИЕ-УЗЛА и fСОКРАЩЕННОЕ-НАЗВАНИЕ-УЗЛА. К примеру, для 2:5020/828 набор a5020-828 подставит адрес AreaFix'а и пароль  

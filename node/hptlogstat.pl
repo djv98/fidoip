@@ -34,7 +34,7 @@
 
 use Time::Local;
 
-$logname = "/home/fido/hpt.log";
+$logname = "/home/fido/logs/hpt.log";
 
 # this hash is used, when converting verbose months to numeral (Jan = 0)
 @months{qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)} = (0..11);
