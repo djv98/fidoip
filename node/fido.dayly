@@ -24,83 +24,83 @@ NODENUMBER1=`echo $NODENUMBER | sed 's|/|\\\/|g'`
 #SHORTNODENAME=`echo $NODENUMBER | sed 's|.*:||g' | sed 's|/|-|g'`
 SHORTNODENAME=SHORTNODE-NAME
 
-/usr/local/bin/binkdstat.pl -d1 >  /home/fido/binkd-dayly.rpt
-/usr/local/bin/hptlogstat.pl 1 -traffic > /home/fido/hpt-dayly.rpt
-/usr/local/bin/st_htick.pl 1 > /home/fido/htick-dayly.rpt
-date > /home/fido/system-dayly.rpt
-echo "" >> /home/fido/system-dayly.rpt
-echo " #################################################" >> /home/fido/system-dayly.rpt
-echo " |               Node runs on:                   |" >> /home/fido/system-dayly.rpt
-echo " #################################################" >> /home/fido/system-dayly.rpt
-uname -a >> /home/fido/system-dayly.rpt
-cat /proc/cpuinfo | head -n12 >>   /home/fido/system-dayly.rpt
-/usr/sbin/lspci >> /home/fido/system-dayly.rpt 2>/dev/null || /sbin/lspci -tv >> /home/fido/system-dayly.rpt
-lsusb -t 2>/dev/null >> /home/fido/system-dayly.rpt
-lsusb  >> /home/fido/system-dayly.rpt
-#dmidecode -t system | grep -v dmidecode | grep -v SMBIOS | grep -v Handle | head -n10  >> /home/fido/system-dayly.rpt
-echo >> /home/fido/system-dayly.rpt
-BOOTPARAM=`cat /proc/cmdline` ; echo "Kernel Boot Options: "$BOOTPARAM"" >> /home/fido/system-dayly.rpt
-echo  >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-echo " |                              System Uptime:                                |" >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-uptime >> /home/fido/system-dayly.rpt
-echo >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-echo " |                              Memory used and running processes:            |" >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-top -b -n 1  | grep -v "load average" >> /home/fido/system-dayly.rpt
-echo >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-echo " |                              Network statistics:                           |" >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-/sbin/ifconfig -a  >> /home/fido/system-dayly.rpt >> /home/fido/system-dayly.rpt 
-echo >> /home/fido/system-dayly.rpt
-cat /proc/net/dev >> /home/fido/system-dayly.rpt
-echo >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-echo " |                              Disk statistics:                              |" >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-df -hT  >> /home/fido/system-dayly.rpt 2>/dev/null
-echo >> /home/fido/system-dayly.rpt
-vmstat -D >> /home/fido/system-dayly.rpt 2>/dev/null
-echo >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-echo " |                              Log information:                              |" >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-echo "System messages:" >> /home/fido/system-dayly.rpt
-dmesg | tail -n40 >> /home/fido/system-dayly.rpt
-echo >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-echo " |                               Loaded kernel modules:                       |" >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
+/usr/local/bin/binkdstat.pl -d1 >  /home/fido/tmp/binkd-dayly.rpt
+/usr/local/bin/hptlogstat.pl 1 -traffic > /home/fido/tmp/hpt-dayly.rpt
+/usr/local/bin/st_htick.pl 1 > /home/fido/tmp/htick-dayly.rpt
+date > /home/fido/tmp/system-dayly.rpt
+echo "" >> /home/fido/tmp/system-dayly.rpt
+echo " #################################################" >> /home/fido/tmp/system-dayly.rpt
+echo " |               Node runs on:                   |" >> /home/fido/tmp/system-dayly.rpt
+echo " #################################################" >> /home/fido/tmp/system-dayly.rpt
+uname -a >> /home/fido/tmp/system-dayly.rpt
+cat /proc/cpuinfo | head -n12 >>   /home/fido/tmp/system-dayly.rpt
+/usr/sbin/lspci >> /home/fido/tmp/system-dayly.rpt 2>/dev/null || /sbin/lspci -tv >> /home/fido/tmp/system-dayly.rpt
+lsusb -t 2>/dev/null >> /home/fido/tmp/system-dayly.rpt
+lsusb  >> /home/fido/tmp/system-dayly.rpt
+#dmidecode -t system | grep -v dmidecode | grep -v SMBIOS | grep -v Handle | head -n10  >> /home/fido/tmp/system-dayly.rpt
+echo >> /home/fido/tmp/system-dayly.rpt
+BOOTPARAM=`cat /proc/cmdline` ; echo "Kernel Boot Options: "$BOOTPARAM"" >> /home/fido/tmp/system-dayly.rpt
+echo  >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+echo " |                              System Uptime:                                |" >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+uptime >> /home/fido/tmp/system-dayly.rpt
+echo >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+echo " |                              Memory used and running processes:            |" >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+top -b -n 1  | grep -v "load average" >> /home/fido/tmp/system-dayly.rpt
+echo >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+echo " |                              Network statistics:                           |" >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+/sbin/ifconfig -a  >> /home/fido/tmp/system-dayly.rpt >> /home/fido/tmp/system-dayly.rpt 
+echo >> /home/fido/tmp/system-dayly.rpt
+cat /proc/net/dev >> /home/fido/tmp/system-dayly.rpt
+echo >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+echo " |                              Disk statistics:                              |" >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+df -hT  >> /home/fido/tmp/system-dayly.rpt 2>/dev/null
+echo >> /home/fido/tmp/system-dayly.rpt
+vmstat -D >> /home/fido/tmp/system-dayly.rpt 2>/dev/null
+echo >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+echo " |                              Log information:                              |" >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+echo "System messages:" >> /home/fido/tmp/system-dayly.rpt
+dmesg | tail -n40 >> /home/fido/tmp/system-dayly.rpt
+echo >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+echo " |                               Loaded kernel modules:                       |" >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
 
-echo "" >> /home/fido/system-dayly.rpt
-cat /proc/modules >> /home/fido/system-dayly.rpt
-echo "" >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-echo " |                               Other sysinfo:                               |" >> /home/fido/system-dayly.rpt
-echo " #############################################################################" >> /home/fido/system-dayly.rpt
-vmstat -a -s >> /home/fido/system-dayly.rpt
-echo >> /home/fido/system-dayly.rpt
-cat /proc/stat >> /home/fido/system-dayly.rpt
-cat /proc/pagetypeinfo >> /home/fido/system-dayly.rpt
-#dmidecode -t chassis | grep -v dmidecode | grep -v SMBIOS | grep -v Handle >> /home/fido/system-dayly.rpt 
-#dmidecode -t bios | grep -v dmidecode | grep -v SMBIOS | grep -v Handle >> /home/fido/system-dayly.rpt 
-#dmidecode -t memory | grep -v dmidecode | grep -v SMBIOS | grep -v Handle >> /home/fido/system-dayly.rpt 
+echo "" >> /home/fido/tmp/system-dayly.rpt
+cat /proc/modules >> /home/fido/tmp/system-dayly.rpt
+echo "" >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+echo " |                               Other sysinfo:                               |" >> /home/fido/tmp/system-dayly.rpt
+echo " #############################################################################" >> /home/fido/tmp/system-dayly.rpt
+vmstat -a -s >> /home/fido/tmp/system-dayly.rpt
+echo >> /home/fido/tmp/system-dayly.rpt
+cat /proc/stat >> /home/fido/tmp/system-dayly.rpt
+cat /proc/pagetypeinfo >> /home/fido/tmp/system-dayly.rpt
+#dmidecode -t chassis | grep -v dmidecode | grep -v SMBIOS | grep -v Handle >> /home/fido/tmp/system-dayly.rpt 
+#dmidecode -t bios | grep -v dmidecode | grep -v SMBIOS | grep -v Handle >> /home/fido/tmp/system-dayly.rpt 
+#dmidecode -t memory | grep -v dmidecode | grep -v SMBIOS | grep -v Handle >> /home/fido/tmp/system-dayly.rpt 
 
 ICONV=`which iconv`
 if [ -x "$ICONV" ];then 
-iconv -t ibm866 /home/fido/system-dayly.rpt > /home/fido/system-dayly.rpt.tmp
-cat /home/fido/system-dayly.rpt.tmp > /home/fido/system-dayly.rpt  
+iconv -t ibm866 /home/fido/tmp/system-dayly.rpt > /home/fido/tmp/system-dayly.rpt.tmp
+cat /home/fido/tmp/system-dayly.rpt.tmp > /home/fido/tmp/system-dayly.rpt  
 fi
 
 echo "Generating dayly statistics of binkd, hpt, htick and system and post it to "$SHORTNODENAME".robots"
 
 export FIDOCONFIG=/usr/local/etc/fido/config 
-/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$NODENUMBER".333  -xt "$NODENUMBER" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Mailer statistic for node "$NODENUMBER"(dayly script job)" -e ""$SHORTNODENAME".robots" -d /home/fido/localinb /home/fido/binkd-dayly.rpt
-/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$NODENUMBER".333  -xt "$NODENUMBER" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Tosser statistic for node "$NODENUMBER"(dayly script job)" -e ""$SHORTNODENAME".robots" -d /home/fido/localinb /home/fido/hpt-dayly.rpt
-/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$NODENUMBER".333  -xt "$NODENUMBER" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Files statistic for node "$NODENUMBER"(dayly script job)" -e ""$SHORTNODENAME".robots" -d /home/fido/localinb /home/fido/htick-dayly.rpt
-/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$NODENUMBER".333  -xt "$NODENUMBER" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "System statistic for node "$NODENUMBER"(dayly script job)" -e ""$SHORTNODENAME".robots" -d /home/fido/localinb /home/fido/system-dayly.rpt
+/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$NODENUMBER".333  -xt "$NODENUMBER" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Mailer statistic for node "$NODENUMBER"(dayly script job)" -e ""$SHORTNODENAME".robots" -d /home/fido/localinb /home/fido/tmp/binkd-dayly.rpt
+/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$NODENUMBER".333  -xt "$NODENUMBER" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Tosser statistic for node "$NODENUMBER"(dayly script job)" -e ""$SHORTNODENAME".robots" -d /home/fido/localinb /home/fido/tmp/hpt-dayly.rpt
+/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$NODENUMBER".333  -xt "$NODENUMBER" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "Files statistic for node "$NODENUMBER"(dayly script job)" -e ""$SHORTNODENAME".robots" -d /home/fido/localinb /home/fido/tmp/htick-dayly.rpt
+/usr/local/sbin/txt2pkt -nf "Dumb-robot" -xf "$NODENUMBER".333  -xt "$NODENUMBER" -t "Powered by automatic fidoip NMS(Node Management System)" -o "http://sourceforge.net/apps/mediawiki/fidoip" -s "System statistic for node "$NODENUMBER"(dayly script job)" -e ""$SHORTNODENAME".robots" -d /home/fido/localinb /home/fido/tmp/system-dayly.rpt
 
 toss
