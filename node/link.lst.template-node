@@ -5,9 +5,9 @@ ourAka MYNODE-ADDRESS
 Password LINK-NODE-PASSWORD
 EchoMailFlavour Normal
 FileEchoFlavour Normal
-AutoAreaCreate on
-AutoAreaCreateDefaults -b Squish -$m 7000 -dupeCheck move -dupeHistory 11
-AutoFileCreate on
+AreaFixAutoCreate on
+AreaFixAutoCreateDefaults -b Squish -$m 7000 -dupeCheck move -dupeHistory 999
+FileFixAutoCreate on
 forwardRequests on
 Packer zip
 
